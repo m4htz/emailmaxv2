@@ -1,0 +1,47 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "npx -y @supabase/mcp-server-supabase@latest --access-token sbp_7fe0ffd7d450093cbd5f9089c194249ea292d21d"
+      ]
+    },
+    "context7": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "npx -y @upstash/context7-mcp@latest"
+      ]
+    },
+    "brave-search": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "npx -y @modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "BSAi0Hnhf9XpBCYyBd3EZNDgZBSqJ5O"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "vscode-mcp-server": {
+      "command": "npx",
+      "args": ["vscode-mcp-server"],
+      "env": {}
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
+    }
+  }
+}
